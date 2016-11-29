@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Captain</title>
+</head>
+<body>
+    <div id="nav" class="message">
+        <ul class="nav-bar">
+        	<li v-for="nav in navList" v-on:click="slide(nav, navList)" v-bind:class="{ active: nav.isSelect }">{{nav.name}}</li>
+        </ul>
+    </div>
+    <script src="dist/build.js"></script>
+</body>
+
+</html>
